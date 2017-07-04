@@ -13,12 +13,12 @@ namespace Fortuneteller2
         //string agemsg = null;
 
         static void Main(string[] args)
-        
-            
-         {
-           
+
+
+        {
+
             {
-                
+
                 // enter user input
                 Console.WriteLine("Enter your First Name");
                 string FirstName = (Console.ReadLine());
@@ -28,22 +28,21 @@ namespace Fortuneteller2
 
                 Console.WriteLine("Enter your Age");
                 int age = int.Parse(Console.ReadLine());
-
+                int retireAge;
 
                 //input odd or even age condition
                 if (age % 2 == 0)
 
                 {
-                    string agemsg = ("You will retire in 10 years");
-                    string retireage =( "10");
-                    Console.WriteLine(agemsg);
+                    
+                    retireAge = 10;
+                 
 
                 }
                 else
                 {
-                    string agemsg = ("You will retire in 15 years");
-                    Console.WriteLine(agemsg);
-
+                    retireAge = 15;
+                   
                 }
                 //begin of birthmonth logic*******
                 Console.WriteLine("Enter the number of your Birth Month");
@@ -165,18 +164,17 @@ namespace Fortuneteller2
                             break;
                             // End transportation logic******
                     }
-                    
 
-                     Console.WriteLine(FirstName +" "+ LastName +" "+ age);
+
+                    Console.WriteLine(FirstName + " " + LastName + " " + "will retire in" +" " + retireAge + " "+ "years");
+                        
                 }
 
             }
 
-               
+
         }
 
     }
 
 }
-    
-
